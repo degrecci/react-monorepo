@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@react-monorepo/orders": ["libs/orders/src/index.ts"],
-      "@react-monorepo/products": ["libs/products/src/index.ts"]
+      "@react-monorepo/products": ["libs/products/src/index.ts"],
+      "@react-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
