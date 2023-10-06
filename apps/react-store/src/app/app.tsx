@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
+import { OrdersList } from '@react-monorepo/orders';
 // importing the component from the library
 import { ProductList } from '@react-monorepo/products';
 
@@ -12,6 +13,7 @@ export function App() {
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/products" element={<ProductList />}></Route>
+      <Route path="/orders" element={<OrdersList />}></Route>
     </Routes>
   );
 }
