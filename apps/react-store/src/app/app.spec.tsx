@@ -1,15 +1,20 @@
+import App from './app';
+import { BrowserRouter } from 'react-router-dom';
+import { ReactElement } from 'react';
 import { render } from '@testing-library/react';
 
-import App from './app';
+const renderWithRouter = (children: ReactElement) => {
+  return render(<BrowserRouter>{children}</BrowserRouter>);
+};
 
 describe('App', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
+    const { baseElement } = renderWithRouter(<App />);
     expect(baseElement).toBeTruthy();
   });
 
   it('should have a greeting as the title', () => {
-    const { getByText } = render(<App />);
-    expect(getByText(/Welcome react-store/gi)).toBeTruthy();
+    const { getByText } = renderWithRouter(<App />);
+    expect(getByText(/Home/gi)).toBeTruthy();
   });
 });
