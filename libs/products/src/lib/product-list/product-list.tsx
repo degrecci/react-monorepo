@@ -1,13 +1,13 @@
-import styles from './product-list.module.css';
+import { Container } from '@react-monorepo/shared-ui';
 
 /* eslint-disable-next-line */
 export interface ProductListProps {}
 
 export function ProductList(props: ProductListProps) {
   return (
-    <div className={styles['container']}>
+    <Container>
       <h1>Welcome to ProductList!</h1>
-    </div>
+    </Container>
   );
 }
 
