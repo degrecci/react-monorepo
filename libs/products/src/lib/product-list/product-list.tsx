@@ -7,6 +7,7 @@ export function ProductList(props: ProductListProps) {
   return (
     <Container>
       <h1>Welcome to ProductList!</h1>
+      <p>This is a change. 👋</p>
     </Container>
   );
 }
