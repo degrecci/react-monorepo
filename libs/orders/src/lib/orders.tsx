@@ -1,11 +1,9 @@
-import styles from './orders.module.css';
-
 /* eslint-disable-next-line */
 export interface OrdersProps {}
 
 export function Orders(props: OrdersProps) {
   return (
-    <div className={styles['container']}>
+    <div>
       <h1>Welcome to Orders!</h1>
     </div>
   );
