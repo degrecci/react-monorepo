@@ -1,14 +1,10 @@
-import styles from './header.module.css';
-
 /* eslint-disable-next-line */
-export interface HeaderProps {}
+export interface HeaderProps {
+  children: React.ReactNode;
+}
 
 export function Header(props: HeaderProps) {
-  return (
-    <div className={styles['container']}>
-      <h1>Welcome to Header!</h1>
-    </div>
-  );
+  return <h1 className="text-xl font-bold">{props.children}</h1>;
 }
 
 export default Header;
